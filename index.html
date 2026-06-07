@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSS Coaching Qualifier</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-panel" aria-labelledby="app-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Melbourne Sports Science</p>
+          <h1 id="app-title">Find the right coaching path.</h1>
+          <p class="intro">
+            Build a plan around your goals, support level, and what will make
+            training easier to follow each week.
+          </p>
+        </div>
+        <div class="signal-strip" aria-label="Qualification signals">
+          <span>Goal</span>
+          <span>Support</span>
+          <span>Urgency</span>
+          <span>Readiness</span>
+        </div>
+      </section>
+
+      <section class="tool-panel" aria-live="polite">
+        <div class="top-bar">
+          <div>
+            <p class="step-kicker" id="step-kicker">Question 1 of 8</p>
+            <h2 id="question-title">Who is this plan for?</h2>
+          </div>
+          <div class="progress-wrap" aria-hidden="true">
+            <div class="progress-track">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <form id="qualifier-form">
+          <fieldset class="question-stage" id="question-stage">
+            <legend class="sr-only">Qualification question</legend>
+          </fieldset>
+
+          <div class="nav-row">
+            <button class="secondary-button" id="back-button" type="button">Back</button>
+            <button class="primary-button" id="next-button" type="button">Next</button>
+          </div>
+        </form>
+
+        <section class="results" id="results" hidden>
+          <div class="result-header">
+            <p class="eyebrow">Custom plan</p>
+            <h2 id="plan-title"></h2>
+            <p id="plan-summary"></p>
+            <p class="price-line" id="price-line"></p>
+          </div>
+
+          <div class="score-grid">
+            <article>
+              <span id="fit-score">0</span>
+              <p>Plan match</p>
+            </article>
+            <article>
+              <span id="urgency-score">0</span>
+              <p>Start timing</p>
+            </article>
+            <article>
+              <span id="budget-score">0</span>
+              <p>Readiness</p>
+            </article>
+          </div>
+
+          <div class="recommendation-grid">
+            <div>
+              <h3>Included in your plan</h3>
+              <ul id="needs-list"></ul>
+            </div>
+            <div>
+              <h3>Next steps</h3>
+              <ul id="talk-track"></ul>
+            </div>
+          </div>
+
+          <div class="offer-box">
+            <div>
+              <p class="eyebrow">Start here</p>
+              <h3 id="offer-title"></h3>
+              <p id="offer-copy"></p>
+            </div>
+            <a class="primary-link" id="booking-link" href="#">Book next step</a>
+          </div>
+
+          <div class="nav-row result-actions">
+            <button class="secondary-button" id="restart-button" type="button">Start over</button>
+            <button class="secondary-button" id="copy-button" type="button">Copy summary</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
