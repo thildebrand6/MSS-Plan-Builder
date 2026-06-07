@@ -1,5 +1,5 @@
 const config = {
-  bookingUrl: "mailto:hello@example.com?subject=MSS%20Coaching%20Plan",
+  bookingUrl: "mailto:thildebrand@melbournesportsscience.com.au?subject=MSS%20Coaching%20Plan",,
   bookingLabel: "Claim My Plan",
   prices: {
     coachingWeekly: 50,
